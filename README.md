@@ -99,8 +99,6 @@ To set up this repository on GitHub with CI/CD and branch protection, see [GITHU
 
 This repository includes GitHub Actions for:
 - **Lint**: Code quality checks with ESLint
-- **Type Check**: TypeScript compilation and type checking
-- **Format Check**: Code formatting validation with Prettier
 - **Build**: Application build verification
 
 All checks must pass before pull requests can be merged.
