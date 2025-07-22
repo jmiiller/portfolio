@@ -52,12 +52,12 @@ These packages provide consistent tooling across all applications in the monorep
 ### Available Scripts
 
 From the root directory:
-- `npm run dev` - Start web app development server
-- `npm run build` - Build web app for production
-- `npm run start` - Start production server
-- `npm run typecheck` - Run TypeScript type checking
-- `npm run lint` - Lint web app code
-- `npm run format` - Format web app code
+- `pnpm dev` - Start development server
+- `pnpm build` - Build all applications
+- `pnpm lint` - Lint all packages
+- `pnpm format` - Format code in all packages
+- `pnpm typecheck` - Run TypeScript type checking
+- `pnpm clean` - Clean build artifacts
 
 ## Technology Stack
 
@@ -90,3 +90,17 @@ The web application extends the shared TypeScript configuration from `@portfolio
 ### Linting & Formatting
 
 ESLint and Prettier configurations are shared across the monorepo via the respective configuration packages, ensuring consistent code style and quality.
+
+## GitHub Setup
+
+To set up this repository on GitHub with CI/CD and branch protection, see [GITHUB_SETUP.md](./GITHUB_SETUP.md) for detailed instructions.
+
+### CI/CD Workflows
+
+This repository includes GitHub Actions for:
+- **Lint**: Code quality checks with ESLint
+- **Type Check**: TypeScript compilation and type checking
+- **Format Check**: Code formatting validation with Prettier
+- **Build**: Application build verification
+
+All checks must pass before pull requests can be merged.
