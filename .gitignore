@@ -3,7 +3,7 @@ node_modules
 /.cache
 /build
 .env
-/.idea
+.idea/
 
 # Turborepo
 .turbo
