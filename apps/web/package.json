@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "remix vite:build",
+    "clean": "rimraf build",
     "dev": "remix vite:dev",
     "start": "remix-serve ./build/server/index.js",
     "typecheck": "tsc",
@@ -30,6 +31,7 @@
     "@types/react-dom": "^18.2.7",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
+    "rimraf": "^6.0.1",
     "tailwindcss": "^3.4.4",
     "typescript": "^5.1.6",
     "vite": "^6.0.0",
