@@ -7,44 +7,13 @@ settings:
 importers:
 
   .:
-    dependencies:
-      '@remix-run/node':
-        specifier: ^2.16.8
-        version: 2.16.8(typescript@5.8.3)
-      '@remix-run/react':
-        specifier: ^2.16.8
-        version: 2.16.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3)
-      '@remix-run/serve':
-        specifier: ^2.16.8
-        version: 2.16.8(typescript@5.8.3)
-      isbot:
-        specifier: ^4.1.0
-        version: 4.4.0
-      react:
-        specifier: ^18.2.0
-        version: 18.3.1
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.3.1(react@18.3.1)
     devDependencies:
-      '@remix-run/dev':
-        specifier: ^2.16.8
-        version: 2.16.8(@remix-run/react@2.16.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3))(@remix-run/serve@2.16.8(typescript@5.8.3))(@types/node@24.0.15)(jiti@1.21.7)(typescript@5.8.3)(vite@6.3.5(@types/node@24.0.15)(jiti@1.21.7)(yaml@2.8.0))(yaml@2.8.0)
-      '@types/react':
-        specifier: ^18.2.20
-        version: 18.3.23
-      '@types/react-dom':
-        specifier: ^18.2.7
-        version: 18.3.7(@types/react@18.3.23)
       '@typescript-eslint/eslint-plugin':
         specifier: ^6.7.4
         version: 6.21.0(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.8.3))(eslint@8.57.1)(typescript@5.8.3)
       '@typescript-eslint/parser':
         specifier: ^6.7.4
         version: 6.21.0(eslint@8.57.1)(typescript@5.8.3)
-      autoprefixer:
-        specifier: ^10.4.19
-        version: 10.4.21(postcss@8.5.6)
       eslint:
         specifier: ^8.38.0
         version: 8.57.1
@@ -69,12 +38,58 @@ importers:
       eslint-plugin-react-hooks:
         specifier: ^4.6.0
         version: 4.6.2(eslint@8.57.1)
-      postcss:
-        specifier: ^8.4.38
-        version: 8.5.6
       prettier:
         specifier: ^3.6.2
         version: 3.6.2
+      turbo:
+        specifier: ^2.5.5
+        version: 2.5.5
+
+  apps/web:
+    dependencies:
+      '@remix-run/node':
+        specifier: ^2.16.8
+        version: 2.16.8(typescript@5.8.3)
+      '@remix-run/react':
+        specifier: ^2.16.8
+        version: 2.16.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3)
+      '@remix-run/serve':
+        specifier: ^2.16.8
+        version: 2.16.8(typescript@5.8.3)
+      isbot:
+        specifier: ^4.1.0
+        version: 4.4.0
+      react:
+        specifier: ^18.2.0
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.3.1(react@18.3.1)
+    devDependencies:
+      '@portfolio/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/eslint-config
+      '@portfolio/prettier-config':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config
+      '@portfolio/tsc-config':
+        specifier: workspace:*
+        version: link:../../packages/tsc-config
+      '@remix-run/dev':
+        specifier: ^2.16.8
+        version: 2.16.8(@remix-run/react@2.16.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.3))(@remix-run/serve@2.16.8(typescript@5.8.3))(@types/node@24.0.15)(jiti@1.21.7)(typescript@5.8.3)(vite@6.3.5(@types/node@24.0.15)(jiti@1.21.7)(yaml@2.8.0))(yaml@2.8.0)
+      '@types/react':
+        specifier: ^18.2.20
+        version: 18.3.23
+      '@types/react-dom':
+        specifier: ^18.2.7
+        version: 18.3.7(@types/react@18.3.23)
+      autoprefixer:
+        specifier: ^10.4.19
+        version: 10.4.21(postcss@8.5.6)
+      postcss:
+        specifier: ^8.4.38
+        version: 8.5.6
       tailwindcss:
         specifier: ^3.4.4
         version: 3.4.17
@@ -87,6 +102,12 @@ importers:
       vite-tsconfig-paths:
         specifier: ^4.2.1
         version: 4.3.2(typescript@5.8.3)(vite@6.3.5(@types/node@24.0.15)(jiti@1.21.7)(yaml@2.8.0))
+
+  packages/eslint-config: {}
+
+  packages/prettier-config: {}
+
+  packages/tsc-config: {}
 
 packages:
 
@@ -3561,8 +3582,42 @@ packages:
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
+  turbo-darwin-64@2.5.5:
+    resolution: {integrity: sha512-RYnTz49u4F5tDD2SUwwtlynABNBAfbyT2uU/brJcyh5k6lDLyNfYKdKmqd3K2ls4AaiALWrFKVSBsiVwhdFNzQ==}
+    cpu: [x64]
+    os: [darwin]
+
+  turbo-darwin-arm64@2.5.5:
+    resolution: {integrity: sha512-Tk+ZeSNdBobZiMw9aFypQt0DlLsWSFWu1ymqsAdJLuPoAH05qCfYtRxE1pJuYHcJB5pqI+/HOxtJoQ40726Btw==}
+    cpu: [arm64]
+    os: [darwin]
+
+  turbo-linux-64@2.5.5:
+    resolution: {integrity: sha512-2/XvMGykD7VgsvWesZZYIIVXMlgBcQy+ZAryjugoTcvJv8TZzSU/B1nShcA7IAjZ0q7OsZ45uP2cOb8EgKT30w==}
+    cpu: [x64]
+    os: [linux]
+
+  turbo-linux-arm64@2.5.5:
+    resolution: {integrity: sha512-DW+8CjCjybu0d7TFm9dovTTVg1VRnlkZ1rceO4zqsaLrit3DgHnN4to4uwyuf9s2V/BwS3IYcRy+HG9BL596Iw==}
+    cpu: [arm64]
+    os: [linux]
+
   turbo-stream@2.4.1:
     resolution: {integrity: sha512-v8kOJXpG3WoTN/+at8vK7erSzo6nW6CIaeOvNOkHQVDajfz1ZVeSxCbc6tOH4hrGZW7VUCV0TOXd8CPzYnYkrw==}
+
+  turbo-windows-64@2.5.5:
+    resolution: {integrity: sha512-q5p1BOy8ChtSZfULuF1BhFMYIx6bevXu4fJ+TE/hyNfyHJIfjl90Z6jWdqAlyaFLmn99X/uw+7d6T/Y/dr5JwQ==}
+    cpu: [x64]
+    os: [win32]
+
+  turbo-windows-arm64@2.5.5:
+    resolution: {integrity: sha512-AXbF1KmpHUq3PKQwddMGoKMYhHsy5t1YBQO8HZ04HLMR0rWv9adYlQ8kaeQJTko1Ay1anOBFTqaxfVOOsu7+1Q==}
+    cpu: [arm64]
+    os: [win32]
+
+  turbo@2.5.5:
+    resolution: {integrity: sha512-eZ7wI6KjtT1eBqCnh2JPXWNUAxtoxxfi6VdBdZFvil0ychCOTxbm7YLRBi1JSt7U3c+u3CLxpoPxLdvr/Npr3A==}
+    hasBin: true
 
   type-check@0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
@@ -7868,7 +7923,34 @@ snapshots:
   tslib@2.8.1:
     optional: true
 
+  turbo-darwin-64@2.5.5:
+    optional: true
+
+  turbo-darwin-arm64@2.5.5:
+    optional: true
+
+  turbo-linux-64@2.5.5:
+    optional: true
+
+  turbo-linux-arm64@2.5.5:
+    optional: true
+
   turbo-stream@2.4.1: {}
+
+  turbo-windows-64@2.5.5:
+    optional: true
+
+  turbo-windows-arm64@2.5.5:
+    optional: true
+
+  turbo@2.5.5:
+    optionalDependencies:
+      turbo-darwin-64: 2.5.5
+      turbo-darwin-arm64: 2.5.5
+      turbo-linux-64: 2.5.5
+      turbo-linux-arm64: 2.5.5
+      turbo-windows-64: 2.5.5
+      turbo-windows-arm64: 2.5.5
 
   type-check@0.4.0:
     dependencies:

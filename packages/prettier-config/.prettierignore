@@ -1,7 +1,8 @@
 node_modules
-build
 .cache
+build
 .env
+.turbo
 *.log
 pnpm-lock.yaml
 package-lock.json

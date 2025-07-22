@@ -1,0 +1,8 @@
+{
+  "name": "@portfolio/prettier-config",
+  "private": true,
+  "version": "0.0.0",
+  "main": "./.prettierrc.js",
+  "scripts": {},
+  "dependencies": {}
+}

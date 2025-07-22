@@ -1,0 +1,38 @@
+{
+  "name": "@portfolio/web",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "build": "remix vite:build",
+    "dev": "remix vite:dev",
+    "start": "remix-serve ./build/server/index.js",
+    "typecheck": "tsc",
+    "lint": "eslint --ignore-path ../../packages/eslint-config/.eslintignore .",
+    "lint:fix": "eslint --ignore-path ../../packages/eslint-config/.eslintignore . --fix",
+    "format": "prettier --ignore-path ../../packages/prettier-config/.prettierignore --write .",
+    "format:check": "prettier --ignore-path ../../packages/prettier-config/.prettierignore --check ."
+  },
+  "dependencies": {
+    "@remix-run/node": "^2.16.8",
+    "@remix-run/react": "^2.16.8",
+    "@remix-run/serve": "^2.16.8",
+    "isbot": "^4.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@portfolio/eslint-config": "workspace:*",
+    "@portfolio/prettier-config": "workspace:*",
+    "@portfolio/tsc-config": "workspace:*",
+    "@remix-run/dev": "^2.16.8",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.1.6",
+    "vite": "^6.0.0",
+    "vite-tsconfig-paths": "^4.2.1"
+  }
+}
