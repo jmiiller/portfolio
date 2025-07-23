@@ -10,6 +10,7 @@
     "lint:fix": "turbo lint:fix",
     "start": "turbo start",
     "typecheck": "turbo typecheck",
+    "deploy": "turbo deploy",
     "clean": "turbo clean"
   },
   "devDependencies": {
