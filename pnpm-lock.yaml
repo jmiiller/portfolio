@@ -45,22 +45,7 @@ importers:
         specifier: ^2.5.5
         version: 2.5.5
 
-  apps/terraform-infra:
-    devDependencies:
-      '@portfolio/eslint-config':
-        specifier: workspace:*
-        version: link:../../packages/eslint-config
-      '@portfolio/prettier-config':
-        specifier: workspace:*
-        version: link:../../packages/prettier-config
-      '@portfolio/tsc-config':
-        specifier: workspace:*
-        version: link:../../packages/tsc-config
-      typescript:
-        specifier: ^5.1.6
-        version: 5.8.3
-
-  apps/web-spa:
+  apps/portfolio-web:
     dependencies:
       '@remix-run/node':
         specifier: ^2.16.8
@@ -78,13 +63,13 @@ importers:
         specifier: ^18.2.0
         version: 18.3.1(react@18.3.1)
     devDependencies:
-      '@portfolio/eslint-config':
+      '@monorepo/eslint-config':
         specifier: workspace:*
         version: link:../../packages/eslint-config
-      '@portfolio/prettier-config':
+      '@monorepo/prettier-config':
         specifier: workspace:*
         version: link:../../packages/prettier-config
-      '@portfolio/tsc-config':
+      '@monorepo/tsc-config':
         specifier: workspace:*
         version: link:../../packages/tsc-config
       '@remix-run/dev':
@@ -117,6 +102,8 @@ importers:
       vite-tsconfig-paths:
         specifier: ^4.2.1
         version: 4.3.2(typescript@5.8.3)(vite@6.3.5(@types/node@24.0.15)(jiti@1.21.7)(yaml@2.8.0))
+
+  apps/tf-infra: {}
 
   packages/eslint-config: {}
 
