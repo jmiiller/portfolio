@@ -1,5 +1,5 @@
 {
-  "name": "@portfolio/tf-infra",
+  "name": "@monorepo/tf-infra",
   "version": "1.0.0",
   "private": true,
   "sideEffects": false,

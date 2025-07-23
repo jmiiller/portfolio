@@ -1,1 +1,1 @@
-module.exports = '@portfolio/prettier-config';
+module.exports = '@monorepo/prettier-config';

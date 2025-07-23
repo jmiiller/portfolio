@@ -1,5 +1,5 @@
 {
-  "name": "@portfolio/portfolio-web",
+  "name": "@monorepo/portfolio-web",
   "private": true,
   "sideEffects": false,
   "type": "module",
@@ -23,9 +23,9 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@portfolio/eslint-config": "workspace:*",
-    "@portfolio/prettier-config": "workspace:*",
-    "@portfolio/tsc-config": "workspace:*",
+    "@monorepo/eslint-config": "workspace:*",
+    "@monorepo/prettier-config": "workspace:*",
+    "@monorepo/tsc-config": "workspace:*",
     "@remix-run/dev": "^2.16.8",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
