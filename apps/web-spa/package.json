@@ -1,5 +1,5 @@
 {
-  "name": "@portfolio/web",
+  "name": "@portfolio/web-spa",
   "private": true,
   "sideEffects": false,
   "type": "module",
@@ -7,7 +7,7 @@
     "build": "remix vite:build",
     "clean": "rimraf build",
     "dev": "remix vite:dev",
-    "start": "remix-serve ./build/server/index.js",
+    "start": "vite preview",
     "typecheck": "tsc",
     "lint": "eslint --ignore-path ../../packages/eslint-config/.eslintignore .",
     "lint:fix": "eslint --ignore-path ../../packages/eslint-config/.eslintignore . --fix",
@@ -17,7 +17,6 @@
   "dependencies": {
     "@remix-run/node": "^2.16.8",
     "@remix-run/react": "^2.16.8",
-    "@remix-run/serve": "^2.16.8",
     "isbot": "^4.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
