@@ -31,6 +31,10 @@
     },
     "clean": {
       "cache": false
+    },
+    "deploy": {
+      "dependsOn": ["^deploy"],
+      "cache": false
     }
   }
 }

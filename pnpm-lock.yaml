@@ -45,6 +45,21 @@ importers:
         specifier: ^2.5.5
         version: 2.5.5
 
+  apps/terraform-infra:
+    devDependencies:
+      '@portfolio/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/eslint-config
+      '@portfolio/prettier-config':
+        specifier: workspace:*
+        version: link:../../packages/prettier-config
+      '@portfolio/tsc-config':
+        specifier: workspace:*
+        version: link:../../packages/tsc-config
+      typescript:
+        specifier: ^5.1.6
+        version: 5.8.3
+
   apps/web-spa:
     dependencies:
       '@remix-run/node':
