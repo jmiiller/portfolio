@@ -1,5 +1,5 @@
 {
-  "name": "@portfolio/monorepo",
+  "name": "@monorepo/root",
   "private": true,
   "scripts": {
     "build": "turbo build",
