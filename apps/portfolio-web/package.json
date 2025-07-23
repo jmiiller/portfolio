@@ -1,5 +1,5 @@
 {
-  "name": "@portfolio/web-spa",
+  "name": "@portfolio/portfolio-web",
   "private": true,
   "sideEffects": false,
   "type": "module",
@@ -12,7 +12,8 @@
     "lint": "eslint --ignore-path ../../packages/eslint-config/.eslintignore .",
     "lint:fix": "eslint --ignore-path ../../packages/eslint-config/.eslintignore . --fix",
     "format": "prettier --ignore-path ../../packages/prettier-config/.prettierignore --write .",
-    "format:check": "prettier --ignore-path ../../packages/prettier-config/.prettierignore --check ."
+    "format:check": "prettier --ignore-path ../../packages/prettier-config/.prettierignore --check .",
+    "tf-format": "echo 'No Terraform files to format in portfolio-web'"
   },
   "dependencies": {
     "@remix-run/node": "^2.16.8",
